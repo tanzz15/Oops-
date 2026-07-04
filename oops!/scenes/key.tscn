@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dnjd0acn2g2e0"]
+
+[ext_resource type="Script" uid="uid://dvp31lvfebab7" path="res://scripts/key.gd" id="1_fttkb"]
+[ext_resource type="Texture2D" uid="uid://cmphed05eyv5f" path="res://assets/sprites/tilemap.png" id="1_yk2u2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fttkb"]
+atlas = ExtResource("1_yk2u2")
+region = Rect2(133, 18, 19, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_htemk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fttkb")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htemk"]
+size = Vector2(17, 12)
+
+[node name="Key" type="Area2D" unique_id=1123622894]
+collision_mask = 2
+script = ExtResource("1_fttkb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1520417969]
+sprite_frames = SubResource("SpriteFrames_htemk")
+frame_progress = 0.8155494
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2140980256]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_htemk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

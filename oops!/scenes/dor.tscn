@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://csurgc3ltd2ay"]
+
+[ext_resource type="Texture2D" uid="uid://dec6bq7xir5cq" path="res://assets/sprites/tile_0150.png" id="1_q3xt0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_htemk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q3xt0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htemk"]
+size = Vector2(18, 18)
+
+[node name="Dor" type="Area2D" unique_id=2135377836]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=865077257]
+sprite_frames = SubResource("SpriteFrames_htemk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1750721564]
+shape = SubResource("RectangleShape2D_htemk")
