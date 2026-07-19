@@ -5,6 +5,6 @@ extends Area2D
 
 
 func _on_body_entered(body: Node2D) -> void:
-	game_manager.add_fruit()
-	print ("+1 fruit")
+	game_manager.add_point()
+	print ("checkpoint")
 	animation_player.play("pickup")

@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://uvi54fsfvc5r" path="res://scenes/platform 2.tscn" id="12_dinhu"]
 [ext_resource type="PackedScene" uid="uid://d182g2n6n0sxn" path="res://scenes/main_menu.tscn" id="13_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bofn77w8v6gsr" path="res://scenes/checkpoint.tscn" id="14_trtic"]
+[ext_resource type="PackedScene" uid="uid://iwqyubn6tw73" path="res://scenes/cp.tscn" id="15_ir15t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ashvg"]
 texture = ExtResource("2_r1crl")
@@ -234,7 +235,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2269, -44), Vector2(2375, -44)]
+"values": [Vector2(1712, -59), Vector2(1824, -59)]
 }
 
 [sub_resource type="Animation" id="Animation_ir15t"]
@@ -306,10 +307,22 @@ unique_name_in_owner = true
 script = ExtResource("1_l4ihi")
 
 [node name="ScoreLabel" type="Label" parent="GameManager" unique_id=1284386708]
-offset_left = 1825.0
-offset_top = 194.0
-offset_right = 1930.0
-offset_bottom = 213.0
+offset_left = 937.0
+offset_top = -117.0
+offset_right = 1042.0
+offset_bottom = -98.0
+theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
+theme_override_fonts/font = ExtResource("2_nlliu")
+theme_override_font_sizes/font_size = 8
+text = "You collected X coins."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="FruitLabel" type="Label" parent="GameManager" unique_id=1120987877]
+offset_left = 937.0
+offset_top = -97.0
+offset_right = 1042.0
+offset_bottom = -78.0
 theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
 theme_override_fonts/font = ExtResource("2_nlliu")
 theme_override_font_sizes/font_size = 8
@@ -358,7 +371,7 @@ autoplay = &"move"
 speed_scale = 1.5
 
 [node name="platform 3" parent="Platforms" unique_id=2012827252 instance=ExtResource("12_dinhu")]
-position = Vector2(2269, -44)
+position = Vector2(1712, -59)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform 3" unique_id=132965867]
 root_node = NodePath("../../platform 3")
@@ -366,7 +379,7 @@ libraries/ = SubResource("AnimationLibrary_ca42v")
 autoplay = &"RESET"
 
 [node name="platform 4" parent="Platforms" unique_id=765163412 instance=ExtResource("12_dinhu")]
-position = Vector2(2269, -44)
+position = Vector2(1712, -59)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform 4" unique_id=1776686055]
 root_node = NodePath("../../platform 4")
@@ -749,10 +762,10 @@ theme_override_font_sizes/font_size = 8
 text = "Almost there..."
 
 [node name="Label4" type="Label" parent="Labels" unique_id=289497806]
-offset_left = 1830.0
-offset_top = 174.0
-offset_right = 1926.0
-offset_bottom = 192.0
+offset_left = 942.0
+offset_top = -137.0
+offset_right = 1038.0
+offset_bottom = -119.0
 theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
 theme_override_fonts/font = ExtResource("7_8cblx")
 theme_override_font_sizes/font_size = 8
@@ -809,13 +822,24 @@ position = Vector2(2504, 55)
 visible = false
 position = Vector2(904, -73)
 
+[node name="Cp2" parent="Cp/Checkpoint" unique_id=1996742892 instance=ExtResource("15_ir15t")]
+visible = false
+position = Vector2(-1008, 130)
+
 [node name="Checkpoint3" parent="Cp" unique_id=1670607538 instance=ExtResource("14_trtic")]
 visible = false
 position = Vector2(1608, -88)
 
+[node name="Cp2" parent="Cp/Checkpoint3" unique_id=2044074054 instance=ExtResource("15_ir15t")]
+visible = false
+position = Vector2(-704, 17)
+
 [node name="Checkpoint2" parent="Cp" unique_id=283624503 instance=ExtResource("14_trtic")]
 visible = false
 position = Vector2(-104, 56)
+
+[node name="Cp" parent="Cp/Checkpoint2" unique_id=54461985 instance=ExtResource("15_ir15t")]
+position = Vector2(1712, -143)
 
 [node name="MainMenu" parent="." unique_id=337675590 instance=ExtResource("13_kvuet")]
 offset_left = -1140.0

@@ -1,10 +1,13 @@
 extends Node
 
 var current_checkpoint : Checkpoint 
-var score = 0
 var player : Player
 
+var score = 0
+var fruit = 0
+
 @onready var score_label = $ScoreLabel
+@onready var fruit_label: Label = $FruitLabel
 
 func respawn_player():
 	if current_checkpoint != null and player != null:
@@ -14,3 +17,7 @@ func respawn_player():
 func add_point():
 	score += 1
 	score_label.text = "You collected " + str(score) + " coins."
+
+func add_fruit():
+	fruit += 1
+	fruit_label.text = "You collected " + str(fruit) + " fruits."
