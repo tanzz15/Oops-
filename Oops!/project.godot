@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Oops!"
-run/main_scene="uid://cuv4vme4rwno0"
+run/main_scene="uid://d182g2n6n0sxn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://ctxltu1rd20ra"
 
 [autoload]
 
@@ -26,7 +30,7 @@ GameManager="*uid://dxuf40asaxghr"
 
 [display]
 
-window/vsync/vsync_mode=0
+window/stretch/mode="canvas_items"
 
 [global_group]
 
