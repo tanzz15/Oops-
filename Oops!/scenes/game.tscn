@@ -369,26 +369,42 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="ScoreLabel" type="Label" parent="GameManager" unique_id=1221730357]
-offset_left = 2883.0
-offset_top = -7.0
-offset_right = 2988.0
-offset_bottom = 12.0
+texture_filter = 1
+offset_left = 2889.0
+offset_top = -15.0
+offset_right = 2964.0
+offset_bottom = 4.0
 theme_override_colors/font_color = Color(0.078431375, 0.59607846, 0.8627451, 1)
 theme_override_fonts/font = ExtResource("2_nlliu")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 6
 text = "You collected X coins."
 horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="FruitLabel" type="Label" parent="GameManager" unique_id=968628826]
-offset_left = 2883.0
-offset_top = 12.0
-offset_right = 2988.0
-offset_bottom = 31.0
+texture_filter = 1
+offset_left = 2889.0
+offset_top = 3.0
+offset_right = 2964.0
+offset_bottom = 22.0
 theme_override_colors/font_color = Color(0.078431375, 0.59607846, 0.8627451, 1)
 theme_override_fonts/font = ExtResource("2_nlliu")
-theme_override_font_sizes/font_size = 8
-text = "You collected X fruits."
+theme_override_font_sizes/font_size = 6
+text = "You collected X/3 fruits."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Next" type="Label" parent="GameManager" unique_id=1322423619]
+texture_filter = 1
+offset_left = 2884.0
+offset_top = 21.0
+offset_right = 2967.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.078431375, 0.59607846, 0.8627451, 1)
+theme_override_fonts/font = ExtResource("2_nlliu")
+theme_override_font_sizes/font_size = 6
+text = "Level Complete!
+Next Level →"
 horizontal_alignment = 1
 autowrap_mode = 2
 
@@ -837,13 +853,13 @@ theme_override_font_sizes/font_size = 8
 text = "Falling hurts..."
 
 [node name="Label6" type="Label" parent="Labels" unique_id=2117587413]
-offset_left = 2887.0
-offset_top = -16.0
-offset_right = 2983.0
-offset_bottom = 2.0
+offset_left = 2825.0
+offset_top = -15.0
+offset_right = 2889.0
+offset_bottom = -6.0
 theme_override_colors/font_color = Color(0.078431375, 0.59607846, 0.8627451, 1)
 theme_override_fonts/font = ExtResource("7_8cblx")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 6
 text = "Great job!"
 horizontal_alignment = 1
 

@@ -21,4 +21,4 @@ func add_point():
 
 func add_fruit():
 	fruit += 1
-	fruit_label.text = "You collected " + str(fruit) + " fruits."
+	fruit_label.text = "You collected " + str(fruit) + "/3 fruits."
