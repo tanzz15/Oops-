@@ -344,31 +344,31 @@ _data = {
 unique_name_in_owner = true
 script = ExtResource("1_l4ihi")
 
-[node name="ScoreLabel" type="Label" parent="GameManager" unique_id=1284386708]
-offset_left = 906.0
-offset_top = -117.0
-offset_right = 1011.0
-offset_bottom = -98.0
+[node name="Checkpoint" type="Label" parent="GameManager" unique_id=1284386708]
+offset_left = 897.0
+offset_top = -100.0
+offset_right = 1002.0
+offset_bottom = -81.0
 theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
 theme_override_fonts/font = ExtResource("2_nlliu")
 theme_override_font_sizes/font_size = 8
-text = "You collected X coins."
+text = "Checkpoint Activated!"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ScoreLabel2" type="Label" parent="GameManager" unique_id=1681114189]
-offset_left = 1600.0
-offset_top = -145.0
-offset_right = 1705.0
-offset_bottom = -126.0
+[node name="Checkpoint2" type="Label" parent="GameManager" unique_id=1681114189]
+offset_left = 1597.0
+offset_top = -123.0
+offset_right = 1702.0
+offset_bottom = -104.0
 theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
 theme_override_fonts/font = ExtResource("2_nlliu")
 theme_override_font_sizes/font_size = 8
-text = "You collected X coins."
+text = "Checkpoint Activated!"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ScoreLabel3" type="Label" parent="GameManager" unique_id=1221730357]
+[node name="ScoreLabel" type="Label" parent="GameManager" unique_id=1221730357]
 offset_left = 2883.0
 offset_top = -7.0
 offset_right = 2988.0
@@ -380,31 +380,7 @@ text = "You collected X coins."
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="FruitLabel" type="Label" parent="GameManager" unique_id=1120987877]
-offset_left = 906.0
-offset_top = -97.0
-offset_right = 1011.0
-offset_bottom = -78.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("2_nlliu")
-theme_override_font_sizes/font_size = 8
-text = "You collected X fruits."
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="FruitLabel2" type="Label" parent="GameManager" unique_id=336355612]
-offset_left = 1600.0
-offset_top = -126.0
-offset_right = 1705.0
-offset_bottom = -107.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("2_nlliu")
-theme_override_font_sizes/font_size = 8
-text = "You collected X fruits."
-horizontal_alignment = 1
-autowrap_mode = 2
-
-[node name="FruitLabel3" type="Label" parent="GameManager" unique_id=968628826]
+[node name="FruitLabel" type="Label" parent="GameManager" unique_id=968628826]
 offset_left = 2883.0
 offset_top = 12.0
 offset_right = 2988.0
@@ -563,10 +539,10 @@ position = Vector2(536, 72)
 position = Vector2(520, 72)
 
 [node name="Coin13" parent="Coins" unique_id=1250879586 instance=ExtResource("4_28cek")]
-position = Vector2(568, 72)
+position = Vector2(568, 62)
 
 [node name="Coin14" parent="Coins" unique_id=846537678 instance=ExtResource("4_28cek")]
-position = Vector2(584, 72)
+position = Vector2(584, 62)
 
 [node name="Coin15" parent="Coins" unique_id=86302442 instance=ExtResource("4_28cek")]
 position = Vector2(616, 72)
@@ -851,46 +827,14 @@ theme_override_font_sizes/font_size = 8
 text = "Space to jump"
 
 [node name="Label2" type="Label" parent="Labels" unique_id=1108209664]
-offset_left = 368.0
+offset_left = 369.0
 offset_top = 78.0
-offset_right = 464.0
+offset_right = 465.0
 offset_bottom = 96.0
 theme_override_colors/font_color = Color(0.0117647, 0.14902, 0.34902, 1)
 theme_override_fonts/font = ExtResource("7_8cblx")
 theme_override_font_sizes/font_size = 8
 text = "Falling hurts..."
-
-[node name="Label3" type="Label" parent="Labels" unique_id=2082764790]
-offset_left = 704.0
-offset_top = -48.0
-offset_right = 800.0
-offset_bottom = -30.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("7_8cblx")
-theme_override_font_sizes/font_size = 8
-text = "Almost there..."
-
-[node name="Label4" type="Label" parent="Labels" unique_id=289497806]
-offset_left = 911.0
-offset_top = -128.0
-offset_right = 1007.0
-offset_bottom = -110.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("7_8cblx")
-theme_override_font_sizes/font_size = 8
-text = "Great job!"
-horizontal_alignment = 1
-
-[node name="Label5" type="Label" parent="Labels" unique_id=1295930168]
-offset_left = 1605.0
-offset_top = -156.0
-offset_right = 1701.0
-offset_bottom = -138.0
-theme_override_colors/font_color = Color(0.0980392, 0.313726, 0.752941, 1)
-theme_override_fonts/font = ExtResource("7_8cblx")
-theme_override_font_sizes/font_size = 8
-text = "Great job!"
-horizontal_alignment = 1
 
 [node name="Label6" type="Label" parent="Labels" unique_id=2117587413]
 offset_left = 2887.0
