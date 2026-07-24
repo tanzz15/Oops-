@@ -1,0 +1,32 @@
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+
+# Environment variables
+.env*.local
+
+# Common ignores
+node_modules
+.next/
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Binary files (game executables)
+game/*.exe
+public/game/*.exe
+
+# Large media files (host externally instead)
+public/images/*.mp4
+public/images/*.mov
+public/images/*.avi
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
